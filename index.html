@@ -9,45 +9,101 @@
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" as="style" crossorigin
-    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
   <header>
     <div class="container">
-      <h1><a href="">Logo</a></h1>
+      <h1><a href="" class="logo">Logo</a></h1>
       <nav>
-        <ul>
-          <li><a href="#">치유·도시농업</a></li>
-          <li><a href="#">교육·서비스 신청</a></li>
-          <li><a href="#">농업정보</a></li>
-          <li><a href="#">열린마당</a></li>
-          <li><a href="#">센터소개</a></li>
+        <ul class="top-nav">
+          <li><a href="#">치유·도시농업</a>
+            <ul class="hidden">
+              <li><a href="#">치유농업</a></li>
+              <li><a href="#">도시농업</a></li>
+              <li><a href="#">반려식물병원</p>a/li>
+              <li><a href="#">곤충산업활성화</a></li>
+              <li><a href="#">텃밭(주말)농장</a></li>
+              <li><a href="#">공기정화식물</a></li>
+              <li><a href="#">식물공장</a></li>
+            </ul>
+          </li>
+          <li><a href="#">교육·서비스 신청</a>
+            <ul class="hidden">
+              <li><a href="#">교육안내</a></li>
+              <li><a href="#">교육신청방법</a></li>
+              <li><a href="#">교육서비스신청</a></li>
+              <li><a href="#">온라인 교육</a></li>
+            </ul>
+          </li>
+          <li><a href="#">농업정보</a>
+            <ul class="hidden">
+              <li><a href="#">주간 농사정보</a></li>
+              <li><a href="#">농업기술정보</a></li>
+              <li><a href="#">서울농업현황</a></li>
+              <li><a href="#">농업연구단체</a></li>
+              <li><a href="#">법령·도서정보</a></li>
+            </ul>
+          </li>
+          <li><a href="#">열린마당</a>
+            <ul class="hidden">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">보도자료</a></li>
+              <li><a href="#">채용시험</a></li>
+              <li><a href="#">지자체 홍보</a></li>
+              <li><a href="#">입찰공고</a></li>
+              <li><a href="#">토양검정</a></li>
+              <li><a href="#">농사일손돕기</a></li>
+              <li><a href="#">농업기술상담</a></li>
+              <li><a href="#">자주 묻는 질문</a></li>
+              <li><a href="#">미디어갤러리</a></li>
+            </ul>
+          </li>
+          <li><a href="#">센터소개</a>
+            <ul class="hidden">
+              <li><a href="#">센터장 인삿말</a></li>
+              <li><a href="#">조직 및 업무</a></li>
+              <li><a href="#">주요 업무</a></li>
+              <li><a href="#">주요 연혁</a></li>
+              <li><a href="#">시설안내</a></li>
+              <li><a href="#">찾아오시는 길</a></li>
+              <li><a href="#">홍보자료</a></li>
+              <li><a href="#">업무협약</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
-      <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+      <div class="search">
+        <form action="result.html" method="get">
+          <label for="search">Search</label>
+          <input type="search" name="keywords" class="hidden">
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+      </div>
     </div>
   </header>
   <main>
-    <section class="banner">
-      <div class="slide-wrapper">
-        <ul class="slide-container">
-          <li class="slide1">
+    <section class="sl_banner">
+      <div class="sl-wrapper">
+        <ul class="sl-container">
+          <li class="sl1">
+            <div class="contents active">
+              <h2>치유농업,<span>땅과 사람을 잇다</span></h2>
+              <p>가장 자연과 가깝게, 쉽게 힐링이 있는 치유농업을 만나다</p>
+              <a href="">바로가기<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </li>
+          <li class="sl2">
             <div class="contents">
               <h2>치유농업,<span>땅과 사람을 잇다</span></h2>
               <p>가장 자연과 가깝게, 쉽게 힐링이 있는 치유농업을 만나다</p>
               <a href="">바로가기<i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </li>
-          <li class="slide2">
-            <div class="contents">
-              <h2>치유농업,<span>땅과 사람을 잇다</span></h2>
-              <p>가장 자연과 가깝게, 쉽게 힐링이 있는 치유농업을 만나다</p>
-              <a href="">바로가기<i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </li>
-          <li class="slide3">
+          <li class="sl3">
             <div class="contents">
               <h2>치유농업,<span>땅과 사람을 잇다</span></h2>
               <p>가장 자연과 가깝게, 쉽게 힐링이 있는 치유농업을 만나다</p>
@@ -56,14 +112,55 @@
           </li>
         </ul>
       </div>
-      <div class="slide_btn">
+      <div class="tabbar_wrapper">
+        <div>
+          <ul>
+            <li>
+              <a href="">
+                <i class="fa-solid fa-wheat-awn-circle-exclamation"></i>주간 농업정보
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-solid fa-person-digging"></i>농업기술 상담
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-solid fa-plant-wilt"></i>반려식물 상담
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-solid fa-hand-holding-heart"></i>치유·도시농업
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="weather_wrapper">
+        <p class="day">2024.08.12</p>
+        <p>한국.서울</p>
+        <div>
+          <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="cloud" id="icon">
+
+          <p> <span id="temp">27°C</span></p>
+        </div>
+        <div>
+          <p><i class="fa-solid fa-sun"></i><span id="sunrise"></span>일출시간</p>
+          <p><i class="fa-solid fa-cloud-rain"></i><span id="rain"></span>강수량</p>
+        </div>
+        <div>
+          <p><i class="fa-regular fa-sun"></i><span id="sunset"></span>일몰시간</p>
+          <p><i class="fa-solid fa-droplet"></i><span id="humidity"></span>습도</p>
+        </div>
       </div>
     </section>
 
     <section class="edu_apply">
       <div class="slide-wrapper">
         <div class="slide-container">
-          <dl>
+          <dl class="sl1">
             <dt></dt>
             <dd></dd>
           </dl>
@@ -75,9 +172,9 @@
         <h3>공지사항</h3>
       </div>
       <div class="sns">
-       <h3>SNS</h3>
-       <figure></figure> 
-       <figure></figure> 
+        <h3>SNS</h3>
+        <figure></figure>
+        <figure></figure>
       </div>
     </section>
 
@@ -85,11 +182,12 @@
   </main>
   <footer>
     <div>
-      
+
     </div>
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="openweather.js"></script>
 </body>
 
 </html>
