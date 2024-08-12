@@ -73,22 +73,32 @@ body{
 }
 
 /*HEADER*/
-header.container{
+/*header{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;  
+}*/
+header .container{
   display: flex;
   justify-content: space-between;
 }
 header .logo{
-  background-image: url(../images/main_logo.png) no-repeat;
-  display: inline-block;
-  width: 172px;
-  height:calc(var(--r1) * 3);
+  background: url(../images/main_logo_white.svg) no-repeat;
+  display: block;
+  width: 200px;
+  height:80px;
   text-indent:-9999em;
 };
-.container nav .top-nav{
+header nav .top-nav{
   display: flex;
   align-items: center;
+  gap: 10px;
+  padding: 0;
+  margin-top: 40px;
 }
-.container nav .top-nav > li ul{
+
+.container nav .top-nav li ul{
   display:none;
 }
 /*SLIDE_BANNER - slide,tabbar,weather*/
