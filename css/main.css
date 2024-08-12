@@ -74,10 +74,11 @@ body{
 
 /*HEADER*/
 header.container{
+  display: flex;
   justify-content: space-between;
 }
 header .logo{
-  background-image: url(../images/main_logo.png);
+  background-image: url(../images/main_logo.png) no-repeat;
   display: inline-block;
   width: 172px;
   height:calc(var(--r1) * 3);
