@@ -73,33 +73,53 @@ body{
 }
 
 /*HEADER*/
-/*header{
+header{
   position: absolute;
   left: 0;
   right: 0;
   top: 0;  
-}*/
+  border-bottom:1px solid var(--black);
+}
+
 header .container{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;  
 }
+
 header .logo{
   background: url(../images/main_logo_white.svg) no-repeat;
   display: block;
   width: 200px;
   height:80px;
   text-indent:-9999em;
-};
-header nav .top-nav{
+}
+
+header .top-nav {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 0;
-  margin-top: 40px;
+  color:#FFF;
+}
+header .top-nav > li{
+  width:202px;
+  height:61px;
+  margin-top:30px;
+  text-align: center;
+  position:relative;
 }
 
 .container nav .top-nav li ul{
   display:none;
+  top:100%;
+}
+.container nav .top-nav li:hover ul{
+  position:absolute;  
+  width:202px;
+  line-height: var(--r2);
+  display: block;
+  text-align: center;
+  background: var(--white);
+  border-top:3px solid var(--primary);
+  box-sizing: border-box;
 }
 /*SLIDE_BANNER - slide,tabbar,weather*/
 /*EDU-APPLY*/
