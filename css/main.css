@@ -20,6 +20,8 @@
 
   /*color*/
   --primary:#167351;
+  --black:#000;
+  --white:#fff;
 
   /*effect*/
   --grad-n:0px 7px 29px 0 rgba(100,100,111,0.2);
