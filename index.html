@@ -17,13 +17,14 @@
   <header>
     <div class="container">
       <h1><a href="index.html" class="logo">Logo</a></h1>
+
       <nav>
         <ul class="top-nav">
           <li><a href="#">치유·도시농업</a>
-            <ul class="hidden">
+            <ul>
               <li><a href="#">치유농업</a></li>
               <li><a href="#">도시농업</a></li>
-              <li><a href="#">반려식물병원</p>a/li>
+              <li><a href="#">반려식물병원</a></li>
               <li><a href="#">곤충산업활성화</a></li>
               <li><a href="#">텃밭(주말)농장</a></li>
               <li><a href="#">공기정화식물</a></li>
@@ -31,7 +32,7 @@
             </ul>
           </li>
           <li><a href="#">교육·서비스 신청</a>
-            <ul class="hidden">
+            <ul>
               <li><a href="#">교육안내</a></li>
               <li><a href="#">교육신청방법</a></li>
               <li><a href="#">교육서비스신청</a></li>
@@ -39,7 +40,7 @@
             </ul>
           </li>
           <li><a href="#">농업정보</a>
-            <ul class="hidden">
+            <ul>
               <li><a href="#">주간 농사정보</a></li>
               <li><a href="#">농업기술정보</a></li>
               <li><a href="#">서울농업현황</a></li>
@@ -48,7 +49,7 @@
             </ul>
           </li>
           <li><a href="#">열린마당</a>
-            <ul class="hidden">
+            <ul>
               <li><a href="#">공지사항</a></li>
               <li><a href="#">보도자료</a></li>
               <li><a href="#">채용시험</a></li>
@@ -62,7 +63,7 @@
             </ul>
           </li>
           <li><a href="#">센터소개</a>
-            <ul class="hidden">
+            <ul>
               <li><a href="#">센터장 인삿말</a></li>
               <li><a href="#">조직 및 업무</a></li>
               <li><a href="#">주요 업무</a></li>
@@ -90,7 +91,7 @@
         <ul class="sl-container">
           <li class="sl1">
             <div class="contents active">
-              <h2>치유농업,<span>땅과 사람을 잇다</span></h2>
+              <h2><span>치유농업,</span><span>땅과 사람을 잇다</span></h2>
               <p>가장 자연과 가깝게, 쉽게 힐링이 있는 치유농업을 만나다</p>
               <a href="">바로가기<i class="fa-solid fa-arrow-right"></i></a>
             </div>
@@ -111,8 +112,8 @@
           </li>
         </ul>
       </div>
-      <div class="tabbar_wrapper">
-        <div>
+      <div class="tabbar_wrapper container">
+        <div class="tabbar">
           <ul>
             <li>
               <a href="">
@@ -136,27 +137,28 @@
             </li>
           </ul>
         </div>
-      </div>
-      <div class="weather_wrapper">
-        <p class="day">2024.08.12</p>
-        <p>한국.서울</p>
-        <div>
-          <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="cloud" id="icon">
 
-          <p> <span id="temp">27°C</span></p>
-        </div>
-        <div>
-          <p><i class="fa-solid fa-sun"></i><span id="sunrise"></span>일출시간</p>
-          <p><i class="fa-solid fa-cloud-rain"></i><span id="rain"></span>강수량</p>
-        </div>
-        <div>
-          <p><i class="fa-regular fa-sun"></i><span id="sunset"></span>일몰시간</p>
-          <p><i class="fa-solid fa-droplet"></i><span id="humidity"></span>습도</p>
+        <div class="weather_wrapper">
+          <p class="day">2024.08.12</p>
+          <p>한국.서울</p>
+          <div>
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="cloud" id="icon">
+
+            <p> <span id="temp">27°C</span></p>
+          </div>
+          <div>
+            <p><i class="fa-solid fa-sun"></i><span id="sunrise"></span>일출시간</p>
+            <p><i class="fa-solid fa-cloud-rain"></i><span id="rain"></span>강수량</p>
+          </div>
+          <div>
+            <p><i class="fa-regular fa-sun"></i><span id="sunset"></span>일몰시간</p>
+            <p><i class="fa-solid fa-droplet"></i><span id="humidity"></span>습도</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="edu_apply">
+    <section class="edu_apply container">
       <div class="slide-wrapper">
         <div class="slide-container">
           <dl class="sl1">
@@ -166,7 +168,7 @@
         </div>
       </div>
     </section>
-    <section class="notification">
+    <section class="notification container">
       <div class="notice">
         <h3>공지사항</h3>
       </div>
@@ -177,11 +179,26 @@
       </div>
     </section>
 
-
   </main>
   <footer>
-    <div>
-
+    <div class="container">
+      <div class="footer-logo"></div>
+      <div>
+        <ul>
+          <li><a href="#">영상정보처리기기 운영 관리방침</a></li>
+          <li><a href="#">누리집 바로잡기</a></li>
+          <li><a href="#">누리집지도</a></li>
+        </ul>
+        <div>
+          주소 :  (06795) 서울특별시 서초구 헌인릉 1길 83-9 (내곡동 1-774) 농업기술센터 청사
+        </div>
+        <ul>
+          <li>대표번호 : 02-459-8005 </li>
+          <li>시민교육팀 : 02-459-8994</li>
+          <li>치유농업팀 : 02-459-8993</li>
+        </ul>
+        <p>© Seoul Metropolitan Government all rights reserved.</p>
+      </div>
     </div>
   </footer>
 

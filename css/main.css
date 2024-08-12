@@ -10,13 +10,14 @@
   --cs1:32px;
   --cl1:91px;
   --c4:460px;
+  --width:1444px;
   
   /*font*/
   --f-main-t:60px;
   --f-sub-t:40px;
   --f-sub:25px;
   --f-body:20px;
-  --f-small:15px
+  --f-small:15px;
 
   /*color*/
   --primary:#167351;
@@ -31,6 +32,12 @@
 
 /* 레이아웃 정리 */
 
+.container{
+  margin: 0 auto;
+  width: 1444px;
+  display: flex;
+}
+
 .hidden{
   position: absolute;
   top: -9999em;
@@ -40,10 +47,49 @@
   overflow:hidden;
 }
 
-/* 폰트 */
 
+/* 폰트 */
+body{
+  font-family: 'Pretendard', Arial, Helvetica, sans-serif;
+  font-size: var(--f-body);
+  line-height: var(--r1);
+}
+
+.f-main{
+  font-size:var(--f-main-t);
+  line-height: var(--f-main-t);
+}
+.f-sub-t{
+  font-size:var(--f-sub-t);
+}
+.f-sub{
+  font-size:var(--f-sub);
+}
+.f-base{
+  font-size:var(--f-body);
+}
+.f-small{
+  font-size:var(--f-small);
+}
 
 /*HEADER*/
+header.container{
+  justify-content: space-between;
+}
+header .logo{
+  background-image: url(../images/main_logo.png);
+  display: inline-block;
+  width: 172px;
+  height:calc(var(--r1) * 3);
+  text-indent:-9999em;
+};
+.container nav .top-nav{
+  display: flex;
+  align-items: center;
+}
+.container nav .top-nav > li ul{
+  display:none;
+}
 /*SLIDE_BANNER - slide,tabbar,weather*/
 /*EDU-APPLY*/
 /*NOTIFICATION - noti,sns*/
