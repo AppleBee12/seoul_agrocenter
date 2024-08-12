@@ -4,12 +4,26 @@
 
 /* 변수 설정 */
 :root {
-  /*
-  가로간격
-  세로간격
-  폰트위계설정
-  컬러차트
-  */
+  /*space*/
+  --r1:27px;
+  --r2:54px;
+  --cs1:32px;
+  --cl1:91px;
+  --c4:460px;
+  
+  /*font*/
+  --f-main-t:60px;
+  --f-sub-t:40px;
+  --f-sub:25px;
+  --f-body:20px;
+  --f-small:15px
+
+  /*color*/
+  --primary:#167351;
+
+  /*effect*/
+  --grad-n:0px 7px 29px 0 rgba(100,100,111,0.2);
+  --grad-h:0px 0px 4px 0px rgba(0,0,0,0.04),0px 16px 8px 0px rgba(0,0,0,0.08);
 }
 
 
@@ -28,4 +42,6 @@
 
 
 /*HEADER*/
-/*EDU*/
+/*SLIDE_BANNER - slide,tabbar,weather*/
+/*EDU-APPLY*/
+/*NOTIFICATION - noti,sns*/
