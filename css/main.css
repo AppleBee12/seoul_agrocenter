@@ -1,6 +1,4 @@
 @charset 'utf-8';
-@import url('reset.css');
-
 
 /* 변수 설정 */
 :root {
@@ -22,6 +20,7 @@
   /*color*/
   --primary:#167351;
   --black:#000;
+  --white8:rgba(255,255,255,0.8);
   --white:#fff;
 
   /*effect*/
@@ -78,15 +77,33 @@ header{
   left: 0;
   right: 0;
   top: 0;  
-  border-bottom:1px solid var(--black);
+  border-bottom:1px solid var(--white);
+}
+body header:hover{
+  background: var(--white8);
+  border-color: var(--black);
+  }
+body header :hover .logo{
+  background: url(../images/main_logo_black.svg) no-repeat;
+}
+body>header :hover a,
+body>header :hover i{
+  color: var(--black);
 }
 
 header .container{
   display: flex;
   justify-content: space-between;  
+  background:transparent;
+  border-bottom: 0px;
 }
 
-header .logo{
+header .container a,
+header .container i{
+color: var(--white);
+}
+
+.logo{
   background: url(../images/main_logo_white.svg) no-repeat;
   display: block;
   width: 200px;
@@ -97,22 +114,29 @@ header .logo{
 header .top-nav {
   display: flex;
   align-items: center;
-  color:#FFF;
+  color:#fff;
 }
+
+.top-nav li:hover >a,
+.top-nav li ul li:hover a{
+ color: var(--primary);
+}
+
 header .top-nav > li{
   width:202px;
   height:61px;
-  margin-top:30px;
+  line-height:61px;
+  margin-top:20px;
   text-align: center;
-  position:relative;
+  
 }
 
 .container nav .top-nav li ul{
   display:none;
-  top:100%;
+  top:58px;
 }
 .container nav .top-nav li:hover ul{
-  position:absolute;  
+  
   width:202px;
   line-height: var(--r2);
   display: block;
@@ -121,6 +145,21 @@ header .top-nav > li{
   border-top:3px solid var(--primary);
   box-sizing: border-box;
 }
+
 /*SLIDE_BANNER - slide,tabbar,weather*/
+.sl-container li{
+  width:1920px;
+  height: 1080px;
+}
+.sl-container .sl1{
+  background: url(../images/banner_slide01.jpg) 0 0/100% 100% no-repeat;
+}
+.sl-container .sl2{
+  background: url(../images/banner_slide02.jpg) 100% 0/100% 100% no-repeat;
+  background-position: ;
+}
+.sl-container .sl3{
+  background: url(../images/banner_slide03.jpg) 200% 0/100% 100% no-repeat;
+}
 /*EDU-APPLY*/
 /*NOTIFICATION - noti,sns*/
