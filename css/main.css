@@ -171,12 +171,13 @@ nav .top-nav > li:hover{
 }
 
 
-.search{
-  
+#searchbox{
+  position:relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
 }
-
-
-
 
 
 
