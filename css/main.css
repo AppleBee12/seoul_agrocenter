@@ -186,7 +186,7 @@ nav .top-nav > li:hover{
 
 /*SLIDE_BANNER - slide,tabbar,weather*/
 .sl-container li {
-  width: 1920px;
+  width: 100%;
   height: 1080px;
 }
 
