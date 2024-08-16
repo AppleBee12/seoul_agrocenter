@@ -176,21 +176,33 @@ nav .top-nav>li:hover {
 }
 
 .search{
-  position: relative;
+  position:relative;
+  margin: var(--r1) 0;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  transition: 0.5s;
+  transition: 0.8s;
   box-shadow: 0 0 2px 1px var(--white8);
-  text-align: center;
-  margin-top: 20px;
-}
-.search .active{
-  width: 500px;
+  /* text-align: center; */
+  
 }
 
-#searchbox .search-btn{
-  position: absolute;
+.search.active{
+  position:absolute;
+  width: 80vw;
+  border-radius: 0;
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: #fff;
+}
+
+.search-btn{
+  
   top:0;
   left:0;
   width:30px;
@@ -203,7 +215,7 @@ nav .top-nav>li:hover {
 
 
 #searchbox {
-  position: absolute;
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
