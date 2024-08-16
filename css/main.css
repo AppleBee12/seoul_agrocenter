@@ -21,6 +21,7 @@
   --primary: #167351;
   --black: #000;
   --black2: rgba(0, 0, 0, 0.2);
+  --black3: rgba(0, 0, 0, 0.3);
   --white2: rgba(255, 255, 255, 0.2);
   --white8: rgba(255, 255, 255, 0.8);
   --white: #fff;
@@ -174,13 +175,43 @@ nav .top-nav>li:hover {
   /* border-top: 3px solid var(--primary); */
 }
 
+.search{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: 0.5s;
+  box-shadow: 0 0 2px 1px var(--white8);
+  text-align: center;
+  margin-top: 20px;
+}
+.search .active{
+  width: 500px;
+}
+
+#searchbox .search-btn{
+  position: absolute;
+  top:0;
+  left:0;
+  width:30px;
+  height:30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
 
 #searchbox {
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
+  width: 50px;
+}
+
+#search-box:focus-within {
+  width: 400px;
 }
 
 
@@ -213,36 +244,44 @@ nav .top-nav>li:hover {
   top: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
   text-align: center;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--black3);
+  background-blend-mode: multiply;
 }
 
 .slide-container>li .contents {
   position: absolute;
-  left: 50%;
-  top: 50%;
   transform: translate(-50%, -50%);
 }
 
 .sl-container .sl1 {
-  background: url(../images/banner_slide01.jpg) center center/cover no-repeat;
+  background-image: url(../images/banner_slide01.jpg),
+    linear-gradient(rgba(0, 0, 0, 0.5), transparent 10%, transparent 80%, rgba(0, 0, 0, 0.5));
 }
 
 .sl-container .sl2 {
-  background: url(../images/banner_slide02.jpg) center center/cover no-repeat;
+  background-image: url(../images/banner_slide02.jpg),
+    linear-gradient(rgba(0, 0, 0, 0.5), transparent 10%, transparent 80%, rgba(0, 0, 0, 0.5));
 }
 
 .sl-container .sl3 {
-  background: url(../images/banner_slide03.jpg) center center/cover no-repeat;
+  background-image: url(../images/banner_slide03.jpg),
+    linear-gradient(rgba(0, 0, 0, 0.5), transparent 10%, transparent 80%, rgba(0, 0, 0, 0.5));
 }
 
-.sl-container li  > *{
+.sl-container li>* {
   color: var(--white);
 }
 
-.sl-container li h2{
+.sl-container li h2 {
   font-size: var(--f-main-t);
 }
-.sl-container li p{
+
+.sl-container li p {
   font-size: var(--f-sub-t);
 }
 
