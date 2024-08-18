@@ -271,7 +271,37 @@ nav .top-nav>li:hover {
 
 .sl-container>li .contents {
   margin-top: 378px;
+  overflow: hidden;
   /* transform: translate(30%, 30%); */
+}
+.sl-container li .contents h2 {
+  height:80px;
+  line-height: 80px;
+}
+
+.sl-container li .contents span {
+  margin-left:27px;
+}
+.sl-container li .contents p {
+  font-size: var(--f-sub-t);
+  line-height: 50px;
+}
+
+.sl-container li .contents a{
+  display: inline-block;
+  color: white;
+  border: 1px solid var(--white);
+  padding: 14px 46px;
+  border-radius: 30px;
+  margin-top:54px;
+  transition: 0.3s;
+}
+.sl-container li .contents a:hover{
+  background: var(--white2);
+}
+
+.sl-wrapper .pager{
+
 }
 
 .sl-container .sl1 {
