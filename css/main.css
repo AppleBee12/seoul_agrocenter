@@ -235,7 +235,11 @@ nav .top-nav>li:hover {
 
 
 /*SLIDE_BANNER - main slide*/
-
+.sl-banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .sl-wrapper {
   position: relative;
   width: 100%;
@@ -261,20 +265,22 @@ nav .top-nav>li:hover {
   height: 100%;
   object-fit: cover;
   text-align: center;
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--black3);
   background-blend-mode: multiply;
+  color: var(--white);
 }
-
 
 .sl-container>li .contents {
   margin-top: 378px;
   overflow: hidden;
   /* transform: translate(30%, 30%); */
+  transition: 0.3s;
 }
 .sl-container li .contents h2 {
+  font-size: var(--f-main-t);
   height:80px;
   line-height: 80px;
 }
@@ -289,19 +295,20 @@ nav .top-nav>li:hover {
 
 .sl-container li .contents a{
   display: inline-block;
-  color: white;
+  color: var(--white);
   border: 1px solid var(--white);
   padding: 14px 46px;
   border-radius: 30px;
   margin-top:54px;
-  transition: 0.3s;
+  
 }
 .sl-container li .contents a:hover{
   background: var(--white2);
 }
 
 .sl-wrapper .pager{
-
+  display: flex;
+  gap: 5px;
 }
 
 .sl-container .sl1 {
@@ -319,24 +326,71 @@ nav .top-nav>li:hover {
     linear-gradient(rgba(0, 0, 0, 0.5), transparent 10%, transparent 80%, rgba(0, 0, 0, 0.5));
 }
 
-.sl-container li>* {
-  color: var(--white);
-}
-
-.sl-container li h2 {
-  font-size: var(--f-main-t);
-}
-
-.sl-container li p {
-  font-size: var(--f-sub-t);
-}
 
 /*SLIDE_BANNER - tabbar*/
-/*SLIDE_BANNER - weather*/
-
-#icon{
-  
+.tabbar_wrapper{
+  position: absolute;
+  top: 707px;
+  display: flex;
+  gap: 155px;
+  justify-content: center;
+  align-items:end;
+  color: var(--white8);
 }
+
+.tabbar{
+  width: 951px;
+  height: 200px;
+  text-align: center;
+  color: var(--white8);
+  border: 1px solid var(--white8);
+  border-radius: 30px;
+}
+.tabbar ul{
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.tabbar ul li{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+.tabbar ul li:after{
+  content:'';
+  padding-left:80px;
+  border-right: 1px solid var(--white8);
+  height: 100px;
+}
+.tabbar ul li:last-child:after{
+  margin:0;
+  border: none;
+}
+.tabbar ul li a{
+  color: var(--white8);
+}
+.tabbar ul li i{
+  display:block;
+  font-size: 80px;
+  line-height: 90px;
+}
+
+
+
+/*SLIDE_BANNER - weather*/
+.weather_wrapper{
+  width: 336px;
+  height: 319px;
+  border: 1px solid var(--white8);
+  border-radius: 30px;
+}
+.weather_wrapper .figures{
+
+}
+
 
 /*EDU-APPLY*/
 /*NOTIFICATION - noti,sns*/
