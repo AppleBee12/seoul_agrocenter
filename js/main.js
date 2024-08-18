@@ -10,3 +10,8 @@ search_btn.addEventListener('click',()=>{
 search_clear.addEventListener('click',()=>{
     search.classList.remove('active');
    });
+
+
+//slide
+const pager = document.querySelector('.pager');
+const slideIdx = 0;
