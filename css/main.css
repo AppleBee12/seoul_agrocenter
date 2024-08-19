@@ -15,6 +15,7 @@
   --f-sub-t: 40px;
   --f-sub: 25px;
   --f-body: 20px;
+  --f-body-mid: 18px;
   --f-small: 15px;
 
   /*color*/
@@ -22,9 +23,11 @@
   --black: #000;
   --black2: rgba(0, 0, 0, 0.2);
   --black3: rgba(0, 0, 0, 0.3);
+  --white: #fff;
   --white2: rgba(255, 255, 255, 0.2);
   --white8: rgba(255, 255, 255, 0.8);
-  --white: #fff;
+  --dpbrown: #463730;
+  --sage: #B1AE91;
 
   /*effect*/
   --grad-n: 0px 7px 29px 0 rgba(100, 100, 111, 0.2);
@@ -410,8 +413,16 @@ nav .top-nav>li:hover {
   font-size: var(--f-main-t);
 }
 .weather_wrapper .figures{
+  
   margin-top: 13px;
   width: 206px;
+}
+
+.weather_wrapper .figures p{
+  display: flex;
+  flex-wrap:wrap;
+  width: 100px;
+  height: 27px;
 }
 
 .today{
@@ -420,4 +431,81 @@ nav .top-nav>li:hover {
 
 
 /*EDU-APPLY*/
+
+
+.edu_apply{
+
+}
+.edu_apply .slides{
+  position:relative;
+}
+.edu_apply .slides .tag{
+  position: absolute;
+  top:0;
+  right:30px;
+  width:84px;
+  height: 54px;
+  line-height: 54px;
+  border-radius: 0 0 20px 20px;
+  text-align: center;
+  font-size:var(--f-body-mid);
+  font-weight: 500;
+  color: var(--white);
+  box-shadow:var(--grad-h);
+}
+.edu_apply .slides .tag-wait{
+  background: var(--dpbrown);
+}
+.edu_apply .slides .tag-open{
+  background: var(--primary);
+}
+.edu_apply .slides .tag-close{
+  background: var(--sage);
+}
+.edu_apply .slides li{
+  width: 460px;
+  height:600px;
+  border:1px solid var(--black2);
+  border-radius: 30px;
+  overflow: hidden;
+  
+}
+.edu_apply .slides li img{
+  width: 460px;
+  height:325px;
+}
+
+.edu_apply .slide-title{
+  background: var(--white);
+  height: 88px;
+  padding: 14px 31px;
+  border-bottom: 1px solid var(--black2);
+  box-sizing: border-box;
+}
+.edu_apply .slide-title h3{
+  line-height: var(--r1);
+  font-weight: 400;
+}
+.edu_apply .slide-title h4{
+  font-size: var(--f-sub);
+  line-height: var(--r1);
+  font-weight: 600;
+  color: var(--black);
+}
+
+.slides .desc{
+  font-size:var(--f-body-mid);
+  line-height: var(--r1);
+  padding: 20px 31px 0;
+}
+.slides .desc:first-child{
+  
+}
+.slides .desc p:first-child{
+  font-weight: 700;
+}
+
+
+
+
 /*NOTIFICATION - noti,sns*/

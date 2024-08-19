@@ -79,9 +79,9 @@
       </nav>
       <div class="search">
         <button type="button" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-        <form id="searchbox" action="result.html" method="get" >
-          <label for="search">Search</label>
-          <input type="search" name="keywords"  placeholder="검색어를 입력해주세요.">
+        <form id="searchbox" action="result.html" method="get">
+          <label id="search">Search</label>
+          <input type="search" name="keywords" placeholder="검색어를 입력해주세요.">
           <button type="submit" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
           <div class="search-clear"><i class="fa-regular fa-circle-xmark"></i></div>
         </form>
@@ -147,7 +147,6 @@
           <p class="region">한국.서울</p>
           <div>
             <img src="" alt="" id="icon">
-
             <p> <span id="temp"></span></p>
           </div>
           <div class="figures">
@@ -163,12 +162,32 @@
     <section class="edu_apply container">
       <div class="slide-wrapper">
         <div class="slide-container">
-          <ul>
+          <ul class="slides animated">
             <li>
-
+              <div class="tag tag-close">접수마감</div>
+              <img src="images/edu_apply_slide01.jpg" alt="">
+              <div class="slide-title">
+                <h3>2024년 (7월)</h3>
+                <h4>제철농산물 교육 모집 안내</h4>
+              </div>
+              <div class="desc">
+                <p>교육기간</p>
+                <p>2024. 07. 02 (화), 07. 04 (목)
+                  <span>14:00 ~ 17:00</span>
+                </p>
+              </div>
+              <div class="desc">
+                <p>대상</p>
+                <p>서울시민 30명</p>
+              </div>
+              <a href="">더보기 <i class="fa-solid fa-arrow-right"></i></a>
             </li>
-            
+
           </ul>
+          <p class="controls">
+            <span class="prev">prev</span>
+            <span class="next">next</span>
+          </p>
         </div>
       </div>
     </section>
@@ -194,7 +213,7 @@
           <li><a href="#">누리집지도</a></li>
         </ul>
         <div>
-          주소 :  (06795) 서울특별시 서초구 헌인릉 1길 83-9 (내곡동 1-774) 농업기술센터 청사
+          주소 : (06795) 서울특별시 서초구 헌인릉 1길 83-9 (내곡동 1-774) 농업기술센터 청사
         </div>
         <ul>
           <li>대표번호 : 02-459-8005 </li>
@@ -206,7 +225,7 @@
     </div>
   </footer>
   <script src="js/openweather.js"></script>
-  <script src="js/main.js"></script>  
+  <script src="js/main.js"></script>
 </body>
 
 </html>
