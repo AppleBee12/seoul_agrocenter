@@ -353,6 +353,7 @@ nav .top-nav>li:hover {
   display: flex;
   justify-content:space-between;
   align-items:center;
+  transition: 0.3s;
 }
 
 .tabbar ul li{
@@ -361,8 +362,22 @@ nav .top-nav>li:hover {
   display: flex;
   justify-content:center;
   align-items:center;
+  transition: 0.3s;
 }
-.tabbar ul li:after{
+.tabbar ul:hover{
+  border-color:var(--white);
+  border-radius: 30px;
+  color: var(--white);
+  background: var(--white2);
+}
+.tabbar ul li:hover{
+  border-radius: 30px;
+  background: var(--white8);  
+}
+.tabbar ul li:hover a{
+  color: var(--primary);
+}
+/* .tabbar ul li:after{
   content:'';
   padding-left:80px;
   border-right: 1px solid var(--white8);
@@ -371,7 +386,7 @@ nav .top-nav>li:hover {
 .tabbar ul li:last-child:after{
   margin:0;
   border: none;
-}
+} */
 .tabbar ul li a{
   color: var(--white8);
 }
@@ -379,6 +394,7 @@ nav .top-nav>li:hover {
   display:block;
   font-size: 80px;
   line-height: 90px;
+  margin-bottom:12px;
 }
 
 
@@ -391,7 +407,14 @@ nav .top-nav>li:hover {
   border-radius: 30px;
   padding: 51px 61px;
   box-sizing: border-box;
+  transition: 0.3s;
 }
+.weather_wrapper:hover{
+  border: 1px solid var(--white);
+  color: var(--white);
+  background: var(--white2);
+}
+
 .weather_wrapper .region{
   font-size: var(--f-small);
   margin-top: 20px;
@@ -413,7 +436,6 @@ nav .top-nav>li:hover {
   font-size: var(--f-main-t);
 }
 .weather_wrapper .figures{
-  
   margin-top: 13px;
   width: 206px;
 }
@@ -423,6 +445,8 @@ nav .top-nav>li:hover {
   flex-wrap:wrap;
   width: 100px;
   height: 27px;
+  justify-content:center;
+  align-items:center;
 }
 
 .today{
@@ -432,10 +456,32 @@ nav .top-nav>li:hover {
 
 /*EDU-APPLY*/
 
-
 .edu_apply{
 
 }
+.edu_apply_title{
+  font-size: var(--f-sub-t);
+  margin-top:108px;
+}
+.edu_apply_title a{
+  border:1px solid var(--black2);
+  box-shadow: var(--grad-n);
+  border-radius: 5px;
+  background: var(--white);
+  font-size:var(--f-small);
+  line-height: var(--r1);
+  padding:8px 16px;
+  bottom:50px;
+  right:28px; 
+  transition: 0.3s;
+}
+.edu_apply_title a:hover{
+  background: var(--primary);
+  color:var(--white);
+  box-shadow: var(--grad-h);
+}
+
+
 .edu_apply .slides{
   position:relative;
 }
@@ -498,14 +544,37 @@ nav .top-nav>li:hover {
   line-height: var(--r1);
   padding: 20px 31px 0;
 }
-.slides .desc:first-child{
+.slides .desc p{
+  display: inline-block;
   
+}
+.slides .desc p span{
+  display: block;
 }
 .slides .desc p:first-child{
   font-weight: 700;
+  width:67px;
+  margin-right:25px;
+  
 }
-
-
+.slides li a{
+  position: absolute;
+  border:1px solid var(--black2);
+  box-shadow: var(--grad-n);
+  border-radius: 5px;
+  background: var(--white);
+  font-size:var(--f-small);
+  line-height: var(--r1);
+  padding:8px 16px;
+  bottom:50px;
+  right:28px; 
+  transition: 0.3s;
+}
+.slides li a:hover{
+  background: var(--primary);
+  color:var(--white);
+  box-shadow: var(--grad-h);
+}
 
 
 /*NOTIFICATION - noti,sns*/
