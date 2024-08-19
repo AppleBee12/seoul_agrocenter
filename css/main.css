@@ -26,6 +26,7 @@
   --white: #fff;
   --white2: rgba(255, 255, 255, 0.2);
   --white8: rgba(255, 255, 255, 0.8);
+  --lightgray: #EEEDED;
   --dpbrown: #463730;
   --sage: #B1AE91;
 
@@ -630,4 +631,23 @@ nav .top-nav>li:hover {
 }
 
 
-/*NOTIFICATION - noti,sns*/
+/*NOTIFICATION - noti*/
+/*NOTIFICATION - sns*/
+/*Footer*/
+footer{
+
+  background: var(--dpbrown);
+  color: var(--white);
+}
+footer .banner-wrapper{
+  background: var(--lightgray);
+  padding:8px 0;
+}
+footer .banner-area{
+  display: flex;
+  gap: 32px;
+}
+
+.footer-logo{
+  background: url(../images/footer_logo.svg) no-repeat;
+}
