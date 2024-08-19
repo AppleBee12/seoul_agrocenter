@@ -386,9 +386,36 @@ nav .top-nav>li:hover {
   height: 319px;
   border: 1px solid var(--white8);
   border-radius: 30px;
+  padding: 51px 61px;
+  box-sizing: border-box;
+}
+.weather_wrapper .region{
+  font-size: var(--f-small);
+  margin-top: 20px;
+  line-height: 27px;
+  height: 27px;
+}
+.weather_wrapper div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 13px;
+}
+.weather_wrapper #icon{
+  height: 60px;
+  line-height: 60px;
+}
+.weather_wrapper #temp{
+  height: 60px;
+  font-size: var(--f-main-t);
 }
 .weather_wrapper .figures{
+  margin-top: 13px;
+  width: 206px;
+}
 
+.today{
+  font-size: var(--f-sub);
 }
 
 

@@ -35,7 +35,7 @@ function getWeather() {
                             + zero(sset.getMinutes(), 2);
             
             today.innerHTML = todayDate;                        
-            temp.innerHTML = result.main.temp + '℃';
+            temp.innerHTML = Math.round(result.main.temp) + '℃';//소수점두자리까지 노출,반올림
             sunrise.innerHTML = sunriseTime;
             // 비가 안오면 rain 이란 폴더 자체가 아예 미생성 되어 오류 발생
             // result.rain false이면 0으로 표시
