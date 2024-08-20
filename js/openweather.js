@@ -12,8 +12,8 @@ function zero(num, length){
 
 function getWeather() {
     let url = 'https://api.openweathermap.org/data/2.5/weather?lat=37.5666791&lon=126.9782914&appid=280737c5041f48e5b80c7544c238063e&units=metric';
-    fetch(url)
-        .then((response) => {//fetch 전역함수
+    fetch(url)//fetch 전역함수
+        .then((response) => {
             if (!response.ok) {
                 throw new Error(`HTTP 오류! 상태: ${response.status}`);
             }

@@ -88,16 +88,19 @@ header {
   left: 0;
   right: 0;
   top: 0;
-  border-bottom: 1px solid var(--white);
+  border-bottom: 1px solid var(--white8);
   z-index: 1;
 }
 
 body header:hover {
-  background: var(--white8);
+  background: 
+  url(../images/menu_background2.png) no-repeat bottom 81px left 30px / 45%,
+  linear-gradient(var(--white)81px, var(--black8)81px, var(--black2)82px, var(--white8)82px);
+  /* linear-gradient(90deg, var(--white)22%, transparent 22%);  */
   border-color: var(--black);
 }
 
-body header :hover .logo {
+body header:hover .logo {
   background: url(../images/main_logo_black.svg) no-repeat;
 }
 
@@ -106,14 +109,13 @@ body>header:hover i {
   color: var(--black);
 }
 
-
-
 header .container {
   display: flex;
   justify-content: space-between;
   background: transparent;
   border-bottom: 0px;
   overflow:hidden;
+  transition: height 0.5s ease-out;
 }
 
 header .container a,
@@ -124,7 +126,6 @@ header .container i {
 header .container #searchbox i {
   color: var(--black);
 }
-
 
 .logo {
   background: url(../images/main_logo_white.svg) no-repeat;
@@ -139,9 +140,7 @@ header .top-nav {
   align-items: center;
   color: #fff;
 }
-header .top-nav li {
-  transition: 0.5s;
-}
+
 header .top-nav li a{
   display: block;
 }
@@ -155,27 +154,26 @@ header .top-nav li a{
 
 .top-nav li ul li:hover {
   background: var(--white);
-  transition: 0.3s;
 }
-.top-nav:hover {
-border-bottom: 1px solid var(--white8);
-}
+
 header .top-nav>li {
+  position:relative;
   width: 202px;
   height: 81px;
   line-height: 81px;
   text-align: center;
-  transition: 0.3s;
-  position:relative;
+  
 }
 
 .container nav .top-nav li ul {
-  top: 81px;
   position:absolute;
+  top: 83px;
+
   width: 202px;
   line-height: var(--r2);
   display: block;
   text-align: center;
+  transition: left 0.5s;
 }
 
 .container nav .top-nav li ul:first-child {
@@ -184,8 +182,9 @@ header .top-nav>li {
 
 nav .top-nav>li:hover {
   border-bottom: 3px solid var(--primary);
+  box-shadow: 0 1px 1px 0 var(--white2) ;
   box-sizing: border-box;
-  transition: 0.1s;
+
 }
 
 /* search검색창 */
