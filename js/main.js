@@ -1,3 +1,15 @@
+//main-menu
+let menu = document.querySelector('header .container nav');
+let header = document.querySelector('header .container');
+
+menu.addEventListener('mouseenter',()=>{
+	header.style.height = '625px';
+});
+menu.addEventListener('mouseleave',()=>{
+	header.style.height = '81px';
+})
+
+
 //search
 const search_btn = document.querySelector('.search-btn')
 const search = document.querySelector('#searchbox')

@@ -49,8 +49,9 @@ function getWeather() {
             let imgUrl = `https://openweathermap.org/img/wn/${code}@2x.png`
             let description = result.weather[0].description;
 
-            icon.setAttribute('src', imgUrl)
-            icon.setAttribute('alt', description)
+            icon.innerHTML = `<img src="${imgUrl}" alt="${description}">`
+            //icon.setAttribute('src', imgUrl)
+            //icon.setAttribute('alt', description)
         })
 }
 getWeather();

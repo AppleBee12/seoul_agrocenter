@@ -20,6 +20,9 @@ const speed = 3;
 
 function animateSlide(){
   currentLeft -= speed;
+  if(){
+    footerwidth
+  }
   //if...footerwidth와 같다면 0
 
 
