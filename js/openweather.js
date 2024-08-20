@@ -20,7 +20,7 @@ function getWeather() {
             return response.json();//JSON -> object
         })
         .then((result) => {
-            //console.log(result);
+            console.log(result);
             let wt = new Date((result.dt) * 1000);
             let srise = new Date((result.sys.sunrise) * 1000)
             let sset = new Date((result.sys.sunset) * 1000)
@@ -40,7 +40,7 @@ function getWeather() {
             // 비가 안오면 rain 이란 폴더 자체가 아예 미생성 되어 오류 발생
             // result.rain false이면 0으로 표시
             let allRain = result.rain && result.rain['1h'] ? result.rain['1h'] : 0;
-            rain.innerHTML = allRain + 'mm';
+            rain.innerHTML = Math.round(allRain) + 'mm';//소수점두자리까지 노출,반올림
             sunset.innerHTML = sunsetTime;    
             humidity.innerHTML = result.main.humidity + '%';
 
