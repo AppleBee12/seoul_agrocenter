@@ -22,12 +22,10 @@ mPagerBtn.forEach((pager, idx) => {
     showSlide(idx);
   });
 
-  // 마우스 호버 시 슬라이드 멈춤
   pager.addEventListener('mouseenter', () => {
     clearInterval(mTimer);
   });
-
-  // 마우스 떠날 시 슬라이드 재개
+  
   pager.addEventListener('mouseleave', () => {
     autoSlide();
   });
