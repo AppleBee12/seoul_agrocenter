@@ -369,15 +369,20 @@ nav .top-nav>li:hover {
   /*transform:translateX(-50%); */
   display: flex;
   justify-content: center;
+  z-index: 1;
 }
+
 .pager a{
   width: 18px;
   height: 18px;
   background: var(--white8);
   text-indent: -9999em;
   border-radius: 9px;
+  margin-right: 20px;
 }
-
+.pager a:last-child{
+  margin-right: 0;
+}
 .pager a.active{
   background:var(--primary);
   border: 1px solid var(--black);
