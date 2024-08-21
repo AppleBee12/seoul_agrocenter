@@ -431,7 +431,7 @@ nav .top-nav>li:hover {
 
 .tabbar ul li:hover {
   border-radius: 30px;
-  background: var(--black);
+  background: var(--black2);
   /* background: linear-gradient(var(--white2),var(--white8)); */
 }
 
@@ -502,7 +502,7 @@ nav .top-nav>li:hover {
 
 .weather_wrapper:hover {
   color: var(--white);
-  background: var(--black2);
+  background: var(--black3);
 }
 
 .weather_wrapper .region {
@@ -956,7 +956,7 @@ nav .top-nav>li:hover {
   margin-left: 10px;
 }
 
-/*Footer*/
+/*Footer */
 footer {
   height: 313px;
   background: var(--dpbrown);
@@ -987,4 +987,41 @@ footer .banner-area li {
 
 .footer-logo {
   background: url(../images/footer_logo.svg) no-repeat;
+  width: 96px;
+  height: 37px;
+}
+
+footer .footer-wrapper{
+  display: flex;
+  gap:50px;
+  padding-top: 55px;
+  font-size: var(--f-small);
+}
+.footer-wrap {
+  width: 670px;
+}
+
+.footer-wrap ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-wrap ul:first-child{
+  width: 500px;
+  justify-content:flex-start;
+}
+.footer-wrap ul:first-child li a{
+color:var(--white);
+}
+.footer-wrap ul:first-child li:after{
+  content:'｜';
+}
+.footer-wrap ul:first-child li:last-child:after{
+  content:'';
+}
+.footer-wrap div{
+  margin-top: 20px;
+}
+.footer-wrap p{
+  margin-top: 20px;
 }
