@@ -764,14 +764,14 @@ nav .top-nav>li:hover {
 }
 .tabmenu{
   padding: 5px 20px;
-  border: 1px solid var(--black2);
-  border-radius: 20px 20px 0 0;
-  background: var(--black2);
   height: 45px;
+  position:relative;
+  z-index: 10;
 }
 .tabmenu li {
   float: left;
 }
+
 
 .tabmenu li a {
   display: block;
@@ -796,7 +796,7 @@ nav .top-nav>li:hover {
 
 .tabcontent {
   padding: 30px;
-  /* border: 1px solid var(--black2); */
+  border: 1px solid var(--black2);
   position: relative;
   height: 290px;
   box-sizing: border-box;
@@ -817,16 +817,24 @@ nav .top-nav>li:hover {
   margin-bottom: 7px;
   text-overflow: ellipsis;
 }
-.tabcontent div li:hover{
-  background: var(--lightgray);
-}
+
 .tabcontent div li:hover a{
   color:var(--primary);
+  border-bottom:1px solid var(--black8);
 }
 .tabcontent div li span{
   float: right;
 }
 
+.tabcontent a.more{
+  position: absolute;
+  right:45px;
+  bottom:10px;
+  display: block;
+  font-size: var(--f-small) ;
+  border:1px solid var(--black2);
+  padding:2px 10px;
+}
 
 /*NOTIFICATION - sns*/
 .sns {
@@ -882,20 +890,21 @@ footer {
 
 footer .banner-wrapper {
   background: var(--lightgray);
-  padding: 8px 0;
+  padding: 12px 0 8px;
   overflow: hidden;
 }
 footer .banner-wrap{
-  width:100%;
+  width:1920px;
 }
 
 footer .banner-area {
   position: relative;
   display: flex;
-  gap: 32px;
+  align-items: center;
+  justify-content: center;
 }
 footer .banner-area li{
-  width: 150px;
+  width: 160px;
 }
 
 .footer-logo {
