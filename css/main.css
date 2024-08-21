@@ -361,6 +361,27 @@ nav .top-nav>li:hover {
     linear-gradient(rgba(0, 0, 0, 0.5), transparent 10%, transparent 80%, rgba(0, 0, 0, 0.5));
 }
 
+.pager{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 300px;
+  /*transform:translateX(-50%); */
+  display: flex;
+  justify-content: center;
+}
+.pager a{
+  width: 18px;
+  height: 18px;
+  background: var(--white8);
+  text-indent: -9999em;
+  border-radius: 9px;
+}
+
+.pager a.active{
+  background:var(--primary);
+  border: 1px solid var(--black);
+}
 
 /*SLIDE_BANNER - tabbar*/
 .tabbar_wrapper {
@@ -829,6 +850,9 @@ footer .banner-wrapper {
   background: var(--lightgray);
   padding: 8px 0;
   overflow: hidden;
+}
+footer .banner-wrap{
+  width:100%;
 }
 
 footer .banner-area {

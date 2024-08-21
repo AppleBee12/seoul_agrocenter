@@ -4,9 +4,8 @@ let items = parent.querySelectorAll('li')
 let itemCount = items.length;
 let itemWidth = footerWidth/itemCount;
 let animation;
-console.log(document.querySelector('footer .banner-wrap').clientWidth)
-console.log(itemCount)
-console.log(itemWidth)
+
+//console.log(itemWidth)
 
 //클론생성 너비지정
 items.forEach(item => {
@@ -14,7 +13,7 @@ items.forEach(item => {
   let cloneItem = item.cloneNode(true);
   cloneItem.classList.add('clone');
   parent.appendChild(cloneItem);
-})
+});
 
 
 //너비설정
