@@ -747,12 +747,11 @@ nav .top-nav>li:hover {
 
 .tabmenu li a {
   display: block;
-  width: 196px;
+  width: 193px;
   padding: 10px 0;
   margin: 3px;
   font-size: 22px;
   font-weight: 500;
-  letter-spacing: 0.1em;
   text-align: center;
   border: 1px solid var(--black2);
   background: var(--black2);
@@ -820,19 +819,25 @@ nav .top-nav>li:hover {
 
 /*Footer*/
 footer {
-
+  height: 313px;
   background: var(--dpbrown);
   color: var(--white);
+  margin-top: 82px;
 }
 
 footer .banner-wrapper {
   background: var(--lightgray);
   padding: 8px 0;
+  overflow: hidden;
 }
 
 footer .banner-area {
+  position: relative;
   display: flex;
   gap: 32px;
+}
+footer .banner-area li{
+  width: 150px;
 }
 
 .footer-logo {

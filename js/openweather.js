@@ -20,7 +20,7 @@ function getWeather() {
             return response.json();//JSON -> object
         })
         .then((result) => {
-            console.log(result);
+            //console.log(result);
             let wt = new Date((result.dt) * 1000);
             let srise = new Date((result.sys.sunrise) * 1000)
             let sset = new Date((result.sys.sunset) * 1000)

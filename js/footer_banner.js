@@ -1,11 +1,15 @@
-let footerwidth = document.querySelector('footer .banner-wrapper').clientWidth;
+let footerWidth = document.querySelector('footer .banner-wrap').clientWidth;
 let parent = document.querySelector('.animation');
 let items = parent.querySelectorAll('li')
 let itemCount = items.length;
-let itemWidth = bodyWidth/itemCount;
+let itemWidth = footerWidth/itemCount;
+let animation;
+console.log(document.querySelector('footer .banner-wrap').clientWidth)
+console.log(itemCount)
+console.log(itemWidth)
 
 //클론생성 너비지정
-items.forEach(item=>{
+items.forEach(item => {
   item.style.width = `${itemWidth}px`;
   let cloneItem = item.cloneNode(true);
   cloneItem.classList.add('clone');
@@ -14,19 +18,31 @@ items.forEach(item=>{
 
 
 //너비설정
-parent.style.width = `${footerwidth *2}px `;
+parent.style.width = `${footerWidth *2}px`;
 let currentLeft = 0;
-const speed = 3;
+const speed = 1;
 
 function animateSlide(){
   currentLeft -= speed;
-  if(){
-    footerwidth
+  if(Math.abs(currentLeft)>=footerWidth){
+    currentLeft = 0;//if...footerWidth 같다면 0
   }
-  //if...footerwidth와 같다면 0
-
 
   parent.style.left = `${currentLeft}px`;
-  requestAnimationFrame(animateSlide);
+  animation = requestAnimationFrame(animateSlide);
+
+  function startAnimation(){
+    if(!animation){
+      animateSlide();
+    }
+  }
+  function stopAnimation(){
+    if(animation){
+      cancelAnimationFrame(animation);
+      animation = null;
+    }    
+  }
+  parent.addEventListener('mouseenter', stopAnimation);
+  parent.addEventListener('mouseleave', startAnimation);
 }
 window.onload = animateSlide;
