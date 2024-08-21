@@ -1072,7 +1072,7 @@ footer .banner-area li {
 footer .footer-wrapper{
   display: flex;
   gap:50px;
-  padding-top: 55px;
+  padding-top: 45px;
   font-size: var(--f-small);
 }
 .footer-wrap {
