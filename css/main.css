@@ -63,11 +63,12 @@
   margin-bottom: 57px;
 }
 
-.notification{
-  padding-top:108px;
+.notification {
+  padding-top: 108px;
 }
-.noticewrap h3{
-  margin-bottom:52px;
+
+.noticewrap h3 {
+  margin-bottom: 52px;
 }
 
 /* 폰트 */
@@ -180,8 +181,8 @@ header .top-nav>li {
   height: 81px;
   line-height: 81px;
   text-align: center;
-
 }
+
 
 .container nav .top-nav li ul {
   position: absolute;
@@ -303,6 +304,7 @@ nav .top-nav>li:hover {
   background-color: var(--black3);
   background-blend-mode: multiply;
   color: var(--white);
+
 }
 
 .sl-container>li .contents {
@@ -334,7 +336,6 @@ nav .top-nav>li:hover {
   padding: 14px 46px;
   border-radius: 30px;
   margin-top: 54px;
-
 }
 
 .sl-container li .contents a:hover {
@@ -362,7 +363,7 @@ nav .top-nav>li:hover {
     linear-gradient(rgba(0, 0, 0, 0.5), transparent 10%, transparent 80%, rgba(0, 0, 0, 0.5));
 }
 
-.pager{
+.pager {
   position: absolute;
   left: 0;
   right: 0;
@@ -373,7 +374,7 @@ nav .top-nav>li:hover {
   z-index: 1;
 }
 
-.pager a{
+.pager a {
   width: 18px;
   height: 18px;
   background: var(--white8);
@@ -381,11 +382,13 @@ nav .top-nav>li:hover {
   border-radius: 9px;
   margin-right: 20px;
 }
-.pager a:last-child{
+
+.pager a:last-child {
   margin-right: 0;
 }
-.pager a.active{
-  background:var(--primary);
+
+.pager a.active {
+  background: var(--primary);
   border: 1px solid var(--black);
 }
 
@@ -428,10 +431,11 @@ nav .top-nav>li:hover {
 
 .tabbar ul li:hover {
   border-radius: 30px;
-  background: var(--black3);
+  background: var(--black);
   /* background: linear-gradient(var(--white2),var(--white8)); */
-
 }
+
+.tabbar ul li a {}
 
 .tabbar ul li:hover a {
   color: var(--white);
@@ -747,13 +751,9 @@ nav .top-nav>li:hover {
 .notification {
   display: flex;
   justify-content: space-between;
-  
+
   border-top: 1px solid var(--black8);
 }
-
-/* .noticewrap {
-  width: 650px;
-} */
 
 .noticetab {
   width: 706px;
@@ -762,16 +762,17 @@ nav .top-nav>li:hover {
   border-radius: 30px;
   box-sizing: border-box;
 }
-.tabmenu{
+
+.tabmenu {
   padding: 5px 20px;
-  height: 45px;
-  position:relative;
+  height: 46px;
+  position: relative;
   z-index: 10;
 }
+
 .tabmenu li {
   float: left;
 }
-
 
 .tabmenu li a {
   display: block;
@@ -791,49 +792,74 @@ nav .top-nav>li:hover {
 .tabmenu li.active a {
   background: var(--white);
   box-shadow: 2px -2px 2px 0 var(--black2);
-  margin:4px;
+  margin: 4px;
 }
 
 .tabcontent {
-  padding: 30px;
   border: 1px solid var(--black2);
   position: relative;
-  height: 290px;
+  height: 282px;
   box-sizing: border-box;
+  border-radius: 0 0 20px 20px;
 }
-.tabcontent > div{
+
+.tabcontent>div {
   position: absolute;
   left: 0;
   top: 0;
   right: 0;
   display: none;
-  padding: 35px 44px;
+  padding: 25px 40px 45px;
+  transition: all 0.5s;
 }
-.tabcontent > div.active{
+
+.tabcontent>div.active {
   display: block;
 }
-.tabcontent div li{
+
+.tabcontent div li {
   line-height: 35px;
   margin-bottom: 7px;
   text-overflow: ellipsis;
 }
 
-.tabcontent div li:hover a{
-  color:var(--primary);
-  border-bottom:1px solid var(--black8);
+.tabcontent div li:hover a {
+  color: var(--primary);
+  border-bottom: 1px solid var(--black8);
 }
-.tabcontent div li span{
+
+.tabcontent div li span {
   float: right;
 }
 
-.tabcontent a.more{
+.tabcontent a.more {
   position: absolute;
-  right:45px;
-  bottom:10px;
-  display: block;
-  font-size: var(--f-small) ;
-  border:1px solid var(--black2);
-  padding:2px 10px;
+
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  display: inline-block;
+  font-size: var(--f-small);
+  /* border: 1px solid var(--black2); */
+  color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  border-radius: 0 0 20px 20px;
+  background-color: var(--lightgray);
+  box-sizing: border-box;
+}
+
+.tabcontent a.more:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.tabcontent a.more img {
+  margin-left: 3px;
+  height: 18px;
 }
 
 /*NOTIFICATION - sns*/
@@ -842,43 +868,93 @@ nav .top-nav>li:hover {
   flex-wrap: wrap;
   width: 706px;
 }
-.sns-wrap{
+
+.sns-wrap {
   display: flex;
-  height: 393px;
+  height: 384px;
 }
 
-.sns h3{
+.sns h3 {
   line-height: 54px;
-  margin-bottom:52px;
+  margin-bottom: 52px;
 }
-.sns .sns-fig{
-  border:1px solid var(--black2);
-  border-radius:30px ;
+
+.sns .sns-fig {
+  border: 1px solid var(--black2);
+  border-radius: 30px;
+  /* background: linear-gradient(var(--white) 330px, var(--lightgray)330px ); */
 }
-.sns .sns-fig:first-child{
+
+.sns .sns-fig:first-child {
   margin-right: 30px;
 }
 
 .sns>figure {
   width: 336px;
-  height: 378px;
   border: 1px solid var(--black8);
 }
-.sns .sns-fig p{
+
+.sns .sns-fig p {
   font-size: var(--f-sub);
   line-height: var(--r1);
   margin: 27px 27px 0;
-  padding-bottom:13px;
-  border-bottom:1px solid var(--black3);
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--black3);
 }
 
-.sns figure img{
-  margin-top: 13px;
+.youtube p {
+  background-image: url(../images/YouTube_Logo.svg);
+  background-position: bottom 18px right 2px;
+  background-repeat: no-repeat;
+  background-size: 25%;
+}
+
+.naverblog p {
+  background-image: url(../images/nblog.png);
+  background-position: bottom 12px right 10px;
+  background-repeat: no-repeat;
+  background-size: 20%;
+}
+
+.sns figure figcaption {
+  margin: 0 27px 10px;
+  line-height: 27px;
+  text-align: center;
+}
+
+.sns figure img {
+  margin-top: 10px;
   width: 336px;
   height: 189px;
   object-fit: cover;
 }
 
+.sns-fig div {
+
+  text-align: right;
+  font-size: var(--f-small);
+  background: var(--lightgray);
+  border-radius: 0 0 30px 30px;
+}
+
+.sns-fig div a {
+  padding: 5px 27px 15px;
+  display: block;
+  border-radius: 0 0 30px 30px;
+}
+
+.sns-fig div:hover {
+  background: var(--primary);
+}
+
+.sns-fig div:hover a {
+  color: var(--white);
+  font-weight: 600;
+}
+
+.sns-fig div a i {
+  margin-left: 10px;
+}
 
 /*Footer*/
 footer {
@@ -893,8 +969,9 @@ footer .banner-wrapper {
   padding: 12px 0 8px;
   overflow: hidden;
 }
-footer .banner-wrap{
-  width:1920px;
+
+footer .banner-wrap {
+  width: 1920px;
 }
 
 footer .banner-area {
@@ -903,7 +980,8 @@ footer .banner-area {
   align-items: center;
   justify-content: center;
 }
-footer .banner-area li{
+
+footer .banner-area li {
   width: 160px;
 }
 

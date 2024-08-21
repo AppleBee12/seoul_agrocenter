@@ -39,8 +39,8 @@ function showSlide(num) {
   let currentSlide = mSlides[mCurrentIdx];
   let nextSlide = mSlides[num];
 
-  currentSlide.animate([{ left: '0%' }, { left: '-100%' }], { duration: 500, fill: 'forwards' });
-  nextSlide.animate([{ left: '100%' }, { left: '0%' }], { duration: 500, fill: 'forwards' });
+  currentSlide.animate([{ left: '0%' }, { left: '-100%' }], { duration: 300, fill: 'forwards' });
+  nextSlide.animate([{ left: '100%' }, { left: '0%' }], { duration: 300, fill: 'forwards' });
 
   mCurrentIdx = num;
 
