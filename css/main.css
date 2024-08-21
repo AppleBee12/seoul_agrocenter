@@ -5,6 +5,7 @@
   /*space*/
   --r1: 27px;
   --r2: 54px;
+  --r3: 81px;
   --cs1: 32px;
   --cl1: 91px;
   --c4: 460px;
@@ -746,6 +747,7 @@ nav .top-nav>li:hover {
 .notification {
   display: flex;
   justify-content: space-between;
+  
   border-top: 1px solid var(--black8);
 }
 
@@ -813,6 +815,7 @@ nav .top-nav>li:hover {
 .tabcontent div li{
   line-height: 35px;
   margin-bottom: 7px;
+  text-overflow: ellipsis;
 }
 .tabcontent div li:hover{
   background: var(--lightgray);
@@ -828,7 +831,24 @@ nav .top-nav>li:hover {
 /*NOTIFICATION - sns*/
 .sns {
   display: flex;
-  gap: 34px;
+  flex-wrap: wrap;
+  width: 706px;
+}
+.sns-wrap{
+  display: flex;
+  height: 393px;
+}
+
+.sns h3{
+  line-height: 54px;
+  margin-bottom:52px;
+}
+.sns .sns-fig{
+  border:1px solid var(--black2);
+  border-radius:30px ;
+}
+.sns .sns-fig:first-child{
+  margin-right: 30px;
 }
 
 .sns>figure {
@@ -836,12 +856,21 @@ nav .top-nav>li:hover {
   height: 378px;
   border: 1px solid var(--black8);
 }
+.sns .sns-fig p{
+  font-size: var(--f-sub);
+  line-height: var(--r1);
+  margin: 27px 27px 0;
+  padding-bottom:13px;
+  border-bottom:1px solid var(--black3);
+}
 
 .sns figure img{
+  margin-top: 13px;
   width: 336px;
   height: 189px;
   object-fit: cover;
 }
+
 
 /*Footer*/
 footer {

@@ -31,6 +31,9 @@ mPagerBtn.forEach((pager, idx) => {
   });
 });
 
+
+
+
 function showSlide(num) {
   if (mCurrentIdx === num) return;
   let currentSlide = mSlides[mCurrentIdx];
